@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace LibrarySystem
 {
-    public partial class AdminDashboard : Form
+    public partial class Homepage : Form
     {
-        public AdminDashboard()
+        public Homepage()
         {
             InitializeComponent();
         }
 
-        private void AdminDashboard_Load(object sender, EventArgs e)
+        private void Homepage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }

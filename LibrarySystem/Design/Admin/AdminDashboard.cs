@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace LibrarySystem
 {
-    public partial class StudentLogin : Form
+    public partial class AdminDashboard : Form
     {
-        public StudentLogin()
+        public AdminDashboard()
         {
             InitializeComponent();
+        }
+
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
