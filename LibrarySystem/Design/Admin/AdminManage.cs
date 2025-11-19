@@ -10,23 +10,11 @@ using System.Windows.Forms;
 
 namespace LibrarySystem
 {
-    public partial class Borrow : Form
+    public partial class AdminManage : Form
     {
-        public Borrow()
+        public AdminManage()
         {
             InitializeComponent();
-        }
-
-        private void Borrow_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Borrow Set!");
         }
     }
 }

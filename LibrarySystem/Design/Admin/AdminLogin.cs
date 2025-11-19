@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Microsoft.VisualBasic.Logging;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,8 +17,16 @@ namespace LibrarySystem
         public AdminLogin()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
+        private void X_Click(object sender, EventArgs e)
+        {
+            LibrarySystem Log = new LibrarySystem();
+            Log.Location = this.Location;
+            Log.Show();
+            this.Close();
+        }
         private void AdLogin_btn_Click(object sender, EventArgs e)
         {
             string connectionString = "server=localhost;user id=root;password=;database=login;";
@@ -64,5 +73,7 @@ namespace LibrarySystem
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        
     }
 }

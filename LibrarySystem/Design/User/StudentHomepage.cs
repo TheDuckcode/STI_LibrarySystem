@@ -8,14 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LibrarySystem
+namespace LibrarySystem.Design.User
 {
-    public partial class StudentProfile : Form
+    public partial class StudentHomepage : Form
     {
-        public StudentProfile()
+        public StudentHomepage()
         {
             InitializeComponent();
         }
-
     }
 }

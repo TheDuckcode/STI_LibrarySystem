@@ -29,20 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminBook));
-            panel2 = new Panel();
-            label5 = new Label();
-            button9 = new Button();
-            button8 = new Button();
-            button7 = new Button();
-            button6 = new Button();
-            button5 = new Button();
-            button4 = new Button();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            pictureBox2 = new PictureBox();
-            textBox2 = new TextBox();
-            pictureBox1 = new PictureBox();
             panel1 = new Panel();
             pictureBox12 = new PictureBox();
             pictureBox11 = new PictureBox();
@@ -56,9 +42,6 @@
             pictureBox3 = new PictureBox();
             label2 = new Label();
             label1 = new Label();
-            panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
@@ -71,188 +54,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.Yellow;
-            panel2.Controls.Add(label5);
-            panel2.Controls.Add(button9);
-            panel2.Controls.Add(button8);
-            panel2.Controls.Add(button7);
-            panel2.Controls.Add(button6);
-            panel2.Controls.Add(button5);
-            panel2.Controls.Add(button4);
-            panel2.Controls.Add(button1);
-            panel2.Controls.Add(button2);
-            panel2.Controls.Add(button3);
-            panel2.Location = new Point(30, 93);
-            panel2.Margin = new Padding(3, 4, 3, 4);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(158, 467);
-            panel2.TabIndex = 31;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = SystemColors.Highlight;
-            label5.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.ControlLightLight;
-            label5.Location = new Point(53, 428);
-            label5.Name = "label5";
-            label5.Size = new Size(63, 23);
-            label5.TabIndex = 30;
-            label5.Text = "Profile";
-            // 
-            // button9
-            // 
-            button9.BackColor = SystemColors.Highlight;
-            button9.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button9.ForeColor = Color.Yellow;
-            button9.Location = new Point(16, 348);
-            button9.Margin = new Padding(3, 4, 3, 4);
-            button9.Name = "button9";
-            button9.Size = new Size(126, 115);
-            button9.TabIndex = 30;
-            button9.Text = "P";
-            button9.TextAlign = ContentAlignment.TopCenter;
-            button9.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            button8.BackColor = SystemColors.Highlight;
-            button8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button8.ForeColor = SystemColors.ControlLightLight;
-            button8.Location = new Point(16, 309);
-            button8.Margin = new Padding(3, 4, 3, 4);
-            button8.Name = "button8";
-            button8.Size = new Size(126, 31);
-            button8.TabIndex = 31;
-            button8.Text = "MANAGE";
-            button8.UseVisualStyleBackColor = false;
-            // 
-            // button7
-            // 
-            button7.BackColor = SystemColors.Highlight;
-            button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button7.ForeColor = SystemColors.ControlLightLight;
-            button7.Location = new Point(16, 268);
-            button7.Margin = new Padding(3, 4, 3, 4);
-            button7.Name = "button7";
-            button7.Size = new Size(126, 33);
-            button7.TabIndex = 30;
-            button7.Text = "STUDENT LOG";
-            button7.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            button6.BackColor = SystemColors.Highlight;
-            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = SystemColors.ControlLightLight;
-            button6.Location = new Point(16, 227);
-            button6.Margin = new Padding(3, 4, 3, 4);
-            button6.Name = "button6";
-            button6.Size = new Size(126, 33);
-            button6.TabIndex = 30;
-            button6.Text = "BOOK LOG";
-            button6.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            button5.BackColor = SystemColors.Highlight;
-            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = SystemColors.ControlLightLight;
-            button5.Location = new Point(16, 185);
-            button5.Margin = new Padding(3, 4, 3, 4);
-            button5.Name = "button5";
-            button5.Size = new Size(126, 33);
-            button5.TabIndex = 30;
-            button5.Text = "AISLE/LOCATION";
-            button5.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = SystemColors.Highlight;
-            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = SystemColors.ControlLightLight;
-            button4.Location = new Point(16, 144);
-            button4.Margin = new Padding(3, 4, 3, 4);
-            button4.Name = "button4";
-            button4.Size = new Size(126, 33);
-            button4.TabIndex = 30;
-            button4.Text = "STUDENT";
-            button4.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            button1.BackColor = SystemColors.Highlight;
-            button1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(16, 7);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(126, 39);
-            button1.TabIndex = 30;
-            button1.Text = "BOOK";
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = SystemColors.Highlight;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Location = new Point(16, 53);
-            button2.Margin = new Padding(3, 4, 3, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(126, 39);
-            button2.TabIndex = 30;
-            button2.Text = "CATEGORY";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = SystemColors.Highlight;
-            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = SystemColors.ControlLightLight;
-            button3.Location = new Point(16, 100);
-            button3.Margin = new Padding(3, 4, 3, 4);
-            button3.Name = "button3";
-            button3.Size = new Size(126, 36);
-            button3.TabIndex = 30;
-            button3.Text = "AUTHOR";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.BackColor = Color.Transparent;
-            pictureBox2.BackgroundImage = (Image)resources.GetObject("pictureBox2.BackgroundImage");
-            pictureBox2.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox2.Location = new Point(253, 48);
-            pictureBox2.Margin = new Padding(3, 4, 3, 4);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(30, 39);
-            pictureBox2.TabIndex = 33;
-            pictureBox2.TabStop = false;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(280, 48);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(577, 37);
-            textBox2.TabIndex = 34;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
-            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox1.Location = new Point(153, 44);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(90, 43);
-            pictureBox1.TabIndex = 32;
-            pictureBox1.TabStop = false;
             // 
             // panel1
             // 
@@ -269,7 +70,7 @@
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(178, 93);
+            panel1.Location = new Point(36, 87);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
             panel1.Size = new Size(704, 467);
@@ -415,20 +216,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(914, 600);
-            Controls.Add(panel2);
+            ClientSize = new Size(837, 768);
             Controls.Add(panel1);
-            Controls.Add(pictureBox2);
-            Controls.Add(textBox2);
-            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "AdminBook";
             Text = "AdminBook";
-            panel2.ResumeLayout(false);
-            panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox12).EndInit();
@@ -442,25 +235,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Panel panel2;
-        private Label label5;
-        private Button button9;
-        private Button button8;
-        private Button button7;
-        private Button button6;
-        private Button button5;
-        private Button button4;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private PictureBox pictureBox2;
-        private TextBox textBox2;
-        private PictureBox pictureBox1;
         private Panel panel1;
         private Label label1;
         private PictureBox pictureBox3;
