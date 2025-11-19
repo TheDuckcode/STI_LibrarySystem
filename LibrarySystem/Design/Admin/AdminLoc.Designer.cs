@@ -73,7 +73,7 @@
             panel1.Location = new Point(71, 74);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(704, 467);
+            panel1.Size = new Size(721, 467);
             panel1.TabIndex = 45;
             // 
             // pictureBox4
@@ -222,6 +222,7 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "AdminLoc";
             Text = "AdminLoc";
+            Load += AdminLoc_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();

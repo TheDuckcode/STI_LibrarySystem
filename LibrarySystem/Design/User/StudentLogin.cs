@@ -33,7 +33,7 @@ namespace LibrarySystem
             string connectionString = "server=localhost;user id=root;password=;database=login;";
             string usernameInput = userLogIn_tbox.Text.Trim().ToLower();
             string passwordInput = userPass_tbox.Text.Trim();
-
+          
             if (string.IsNullOrEmpty(usernameInput) || string.IsNullOrEmpty(passwordInput))
             {
                 MessageBox.Show("Please enter both username and password.");
@@ -42,7 +42,6 @@ namespace LibrarySystem
 
             try
             {
-
                 using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
                     conn.Open();

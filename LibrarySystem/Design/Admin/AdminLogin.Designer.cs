@@ -101,8 +101,10 @@
             adminPass_tbox.Location = new Point(126, 386);
             adminPass_tbox.Margin = new Padding(3, 4, 3, 4);
             adminPass_tbox.Name = "adminPass_tbox";
+            adminPass_tbox.PasswordChar = 'X';
             adminPass_tbox.Size = new Size(348, 27);
             adminPass_tbox.TabIndex = 16;
+            adminPass_tbox.UseSystemPasswordChar = true;
             // 
             // label5
             // 

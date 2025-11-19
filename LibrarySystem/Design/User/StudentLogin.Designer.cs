@@ -78,10 +78,11 @@
             userPass_tbox.BackColor = Color.Gainsboro;
             userPass_tbox.Location = new Point(126, 386);
             userPass_tbox.Margin = new Padding(3, 4, 3, 4);
-            userPass_tbox.Multiline = true;
             userPass_tbox.Name = "userPass_tbox";
+            userPass_tbox.PasswordChar = 'x';
             userPass_tbox.Size = new Size(348, 27);
             userPass_tbox.TabIndex = 7;
+            userPass_tbox.UseSystemPasswordChar = true;
             // 
             // userLog_btn
             // 

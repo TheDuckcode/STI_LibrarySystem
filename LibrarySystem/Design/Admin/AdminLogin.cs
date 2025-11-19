@@ -33,6 +33,7 @@ namespace LibrarySystem
             string adminUser = AdminLogIn_tbox.Text.Trim().ToLower();
             string adminPass = adminPass_tbox.Text.Trim();
 
+
             if (adminUser == "" || adminPass == "")
             {
                 MessageBox.Show("Please enter both username and password.");

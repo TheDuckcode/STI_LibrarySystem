@@ -22,7 +22,7 @@ namespace LibrarySystem
 
         private void Homepage_Load(object sender, EventArgs e)
         {
-
+            FormLoader.LoadFormInPanel(panelContent, new StudentHomepage());
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
