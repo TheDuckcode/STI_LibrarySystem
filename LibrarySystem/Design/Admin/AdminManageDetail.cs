@@ -10,14 +10,15 @@ using System.Windows.Forms;
 
 namespace LibrarySystem
 {
-    public partial class AdminAuthor : Form
+    public partial class AdminManageDetail : Form
     {
-        public AdminAuthor()
+        public AdminManageDetail()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterParent;
         }
 
-        private void AdminAuthor_Load(object sender, EventArgs e)
+        private void AdminManageDetail_Load(object sender, EventArgs e)
         {
 
         }

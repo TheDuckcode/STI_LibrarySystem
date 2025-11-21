@@ -16,6 +16,7 @@ namespace LibrarySystem
         public AdminDashboard()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void AdminDashboard_Load(object sender, EventArgs e)
@@ -47,11 +48,7 @@ namespace LibrarySystem
             FormLoader.LoadFormInPanel(panelContent, new AdminCategory());
         }
 
-        private void author_btn_Click(object sender, EventArgs e)
-        {
-            FormLoader.LoadFormInPanel(panelContent, new AdminAuthor());
-        }
-
+        
         private void location_btn_Click(object sender, EventArgs e)
         {
             FormLoader.LoadFormInPanel(panelContent, new AdminLoc());

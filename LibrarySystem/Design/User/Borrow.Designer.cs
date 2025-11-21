@@ -48,7 +48,7 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Microsoft Sans Serif", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Yellow;
-            label1.Location = new Point(28, 34);
+            label1.Location = new Point(28, 89);
             label1.Name = "label1";
             label1.Size = new Size(158, 36);
             label1.TabIndex = 21;
@@ -65,7 +65,7 @@
             panel1.Location = new Point(290, 176);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(489, 259);
+            panel1.Size = new Size(518, 423);
             panel1.TabIndex = 22;
             // 
             // button3
@@ -73,7 +73,7 @@
             button3.BackColor = SystemColors.Highlight;
             button3.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.Yellow;
-            button3.Location = new Point(338, 201);
+            button3.Location = new Point(340, 369);
             button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
             button3.Size = new Size(137, 40);
@@ -85,7 +85,7 @@
             // textBox3
             // 
             textBox3.BackColor = Color.Gainsboro;
-            textBox3.Location = new Point(241, 136);
+            textBox3.Location = new Point(240, 68);
             textBox3.Margin = new Padding(3, 4, 3, 4);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(228, 27);
@@ -94,7 +94,7 @@
             // textBox1
             // 
             textBox1.BackColor = Color.Gainsboro;
-            textBox1.Location = new Point(183, 74);
+            textBox1.Location = new Point(182, 22);
             textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(286, 27);
@@ -105,7 +105,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ActiveCaptionText;
-            label3.Location = new Point(14, 133);
+            label3.Location = new Point(13, 65);
             label3.Name = "label3";
             label3.Size = new Size(227, 32);
             label3.TabIndex = 2;
@@ -116,7 +116,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ActiveCaptionText;
-            label2.Location = new Point(14, 71);
+            label2.Location = new Point(13, 19);
             label2.Name = "label2";
             label2.Size = new Size(163, 32);
             label2.TabIndex = 1;

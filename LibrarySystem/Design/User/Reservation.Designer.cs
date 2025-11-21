@@ -51,7 +51,7 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Microsoft Sans Serif", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Yellow;
-            label1.Location = new Point(21, 19);
+            label1.Location = new Point(21, 90);
             label1.Name = "label1";
             label1.Size = new Size(242, 36);
             label1.TabIndex = 24;
@@ -100,7 +100,7 @@
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Location = new Point(176, 215);
+            dateTimePicker2.Location = new Point(202, 217);
             dateTimePicker2.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker2.Name = "dateTimePicker2";
             dateTimePicker2.Size = new Size(228, 27);
@@ -108,7 +108,7 @@
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Location = new Point(176, 113);
+            dateTimePicker1.Location = new Point(202, 116);
             dateTimePicker1.Margin = new Padding(3, 4, 3, 4);
             dateTimePicker1.Name = "dateTimePicker1";
             dateTimePicker1.Size = new Size(228, 27);

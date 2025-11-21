@@ -70,10 +70,10 @@
             panel1.Controls.Add(pictureBox4);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(55, 89);
+            panel1.Location = new Point(27, 81);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(704, 467);
+            panel1.Size = new Size(798, 662);
             panel1.TabIndex = 39;
             // 
             // pictureBox3
@@ -102,7 +102,7 @@
             // 
             pictureBox12.BackgroundImage = (Image)resources.GetObject("pictureBox12.BackgroundImage");
             pictureBox12.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox12.Location = new Point(448, 291);
+            pictureBox12.Location = new Point(455, 316);
             pictureBox12.Margin = new Padding(3, 4, 3, 4);
             pictureBox12.Name = "pictureBox12";
             pictureBox12.Size = new Size(115, 160);
@@ -124,7 +124,7 @@
             // 
             pictureBox10.BackgroundImage = (Image)resources.GetObject("pictureBox10.BackgroundImage");
             pictureBox10.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox10.Location = new Point(589, 291);
+            pictureBox10.Location = new Point(596, 316);
             pictureBox10.Margin = new Padding(3, 4, 3, 4);
             pictureBox10.Name = "pictureBox10";
             pictureBox10.Size = new Size(115, 160);
@@ -135,7 +135,7 @@
             // 
             pictureBox8.BackgroundImage = (Image)resources.GetObject("pictureBox8.BackgroundImage");
             pictureBox8.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox8.Location = new Point(16, 291);
+            pictureBox8.Location = new Point(23, 316);
             pictureBox8.Margin = new Padding(3, 4, 3, 4);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(115, 160);
@@ -146,7 +146,7 @@
             // 
             pictureBox7.BackgroundImage = (Image)resources.GetObject("pictureBox7.BackgroundImage");
             pictureBox7.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox7.Location = new Point(159, 291);
+            pictureBox7.Location = new Point(166, 316);
             pictureBox7.Margin = new Padding(3, 4, 3, 4);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(115, 160);
@@ -179,7 +179,7 @@
             // 
             pictureBox4.BackgroundImage = (Image)resources.GetObject("pictureBox4.BackgroundImage");
             pictureBox4.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox4.Location = new Point(301, 291);
+            pictureBox4.Location = new Point(308, 316);
             pictureBox4.Margin = new Padding(3, 4, 3, 4);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(115, 160);
@@ -192,7 +192,7 @@
             label2.BackColor = SystemColors.Highlight;
             label2.Font = new Font("Segoe UI Black", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Yellow;
-            label2.Location = new Point(16, 244);
+            label2.Location = new Point(23, 269);
             label2.Name = "label2";
             label2.Size = new Size(223, 41);
             label2.TabIndex = 30;
@@ -214,7 +214,6 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(837, 768);
             Controls.Add(panel1);

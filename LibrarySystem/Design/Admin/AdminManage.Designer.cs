@@ -29,106 +29,89 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            dataGridView1 = new DataGridView();
-            BookLog = new DataGridViewTextBoxColumn();
-            BookTitle = new DataGridViewTextBoxColumn();
-            Author = new DataGridViewTextBoxColumn();
-            StudNo = new DataGridViewTextBoxColumn();
-            Status = new DataGridViewTextBoxColumn();
-            button4 = new Button();
-            button11 = new Button();
+            refresh_btn = new Button();
+            details_btn = new Button();
+            manage_dataGrid = new DataGridView();
+            archive_btn = new Button();
             label2 = new Label();
-            button10 = new Button();
+            add_btn = new Button();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)manage_dataGrid).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.WhiteSmoke;
-            panel1.Controls.Add(dataGridView1);
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button11);
+            panel1.BackColor = SystemColors.Info;
+            panel1.Controls.Add(refresh_btn);
+            panel1.Controls.Add(details_btn);
+            panel1.Controls.Add(manage_dataGrid);
+            panel1.Controls.Add(archive_btn);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(button10);
-            panel1.Location = new Point(63, 83);
+            panel1.Controls.Add(add_btn);
+            panel1.Location = new Point(12, 13);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(702, 467);
+            panel1.Size = new Size(813, 543);
             panel1.TabIndex = 57;
             // 
-            // dataGridView1
+            // refresh_btn
             // 
-            dataGridView1.BackgroundColor = SystemColors.Highlight;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { BookLog, BookTitle, Author, StudNo, Status });
-            dataGridView1.Location = new Point(18, 27);
-            dataGridView1.Margin = new Padding(3, 4, 3, 4);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(666, 325);
-            dataGridView1.TabIndex = 68;
+            refresh_btn.AutoSize = true;
+            refresh_btn.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            refresh_btn.FlatStyle = FlatStyle.Flat;
+            refresh_btn.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            refresh_btn.ImageAlign = ContentAlignment.TopCenter;
+            refresh_btn.Location = new Point(168, 485);
+            refresh_btn.Margin = new Padding(3, 4, 3, 4);
+            refresh_btn.Name = "refresh_btn";
+            refresh_btn.Size = new Size(94, 35);
+            refresh_btn.TabIndex = 69;
+            refresh_btn.Text = "REFRESH";
+            refresh_btn.UseVisualStyleBackColor = true;
+            refresh_btn.Click += refresh_btn_Click;
             // 
-            // BookLog
+            // details_btn
             // 
-            BookLog.HeaderText = "BOOK LOG ID";
-            BookLog.MinimumWidth = 6;
-            BookLog.Name = "BookLog";
-            BookLog.Width = 125;
+            details_btn.AutoSize = true;
+            details_btn.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            details_btn.FlatStyle = FlatStyle.Flat;
+            details_btn.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            details_btn.ImageAlign = ContentAlignment.TopCenter;
+            details_btn.Location = new Point(20, 485);
+            details_btn.Margin = new Padding(3, 4, 3, 4);
+            details_btn.Name = "details_btn";
+            details_btn.Size = new Size(142, 35);
+            details_btn.TabIndex = 67;
+            details_btn.Text = "BOOK DETAILS";
+            details_btn.UseVisualStyleBackColor = true;
+            details_btn.Click += details_btn_Click;
             // 
-            // BookTitle
+            // manage_dataGrid
             // 
-            BookTitle.HeaderText = "BOOK TITLE";
-            BookTitle.MinimumWidth = 6;
-            BookTitle.Name = "BookTitle";
-            BookTitle.Width = 125;
+            manage_dataGrid.BackgroundColor = SystemColors.Highlight;
+            manage_dataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            manage_dataGrid.Location = new Point(18, 27);
+            manage_dataGrid.Margin = new Padding(3, 4, 3, 4);
+            manage_dataGrid.Name = "manage_dataGrid";
+            manage_dataGrid.RowHeadersWidth = 51;
+            manage_dataGrid.Size = new Size(775, 428);
+            manage_dataGrid.TabIndex = 68;
             // 
-            // Author
+            // archive_btn
             // 
-            Author.HeaderText = "AUTHOR";
-            Author.MinimumWidth = 6;
-            Author.Name = "Author";
-            Author.Width = 125;
-            // 
-            // StudNo
-            // 
-            StudNo.HeaderText = "Book Type";
-            StudNo.MinimumWidth = 6;
-            StudNo.Name = "StudNo";
-            StudNo.Width = 125;
-            // 
-            // Status
-            // 
-            Status.HeaderText = "STATUS";
-            Status.MinimumWidth = 6;
-            Status.Name = "Status";
-            Status.Width = 125;
-            // 
-            // button4
-            // 
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ImageAlign = ContentAlignment.TopCenter;
-            button4.Location = new Point(19, 391);
-            button4.Margin = new Padding(3, 4, 3, 4);
-            button4.Name = "button4";
-            button4.Size = new Size(166, 60);
-            button4.TabIndex = 67;
-            button4.Text = "Book Detail";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            button11.FlatStyle = FlatStyle.Flat;
-            button11.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button11.ImageAlign = ContentAlignment.TopCenter;
-            button11.Location = new Point(333, 391);
-            button11.Margin = new Padding(3, 4, 3, 4);
-            button11.Name = "button11";
-            button11.Size = new Size(177, 60);
-            button11.TabIndex = 61;
-            button11.Text = "ARCHIVE BOOK";
-            button11.UseVisualStyleBackColor = true;
+            archive_btn.AutoSize = true;
+            archive_btn.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            archive_btn.FlatStyle = FlatStyle.Flat;
+            archive_btn.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            archive_btn.ImageAlign = ContentAlignment.TopCenter;
+            archive_btn.Location = new Point(528, 485);
+            archive_btn.Margin = new Padding(3, 4, 3, 4);
+            archive_btn.Name = "archive_btn";
+            archive_btn.Size = new Size(147, 35);
+            archive_btn.TabIndex = 61;
+            archive_btn.Text = "ARCHIVE BOOK";
+            archive_btn.UseVisualStyleBackColor = true;
+            archive_btn.Click += archive_btn_Click;
             // 
             // label2
             // 
@@ -141,23 +124,27 @@
             label2.Size = new Size(0, 31);
             label2.TabIndex = 60;
             // 
-            // button10
+            // add_btn
             // 
-            button10.FlatStyle = FlatStyle.Flat;
-            button10.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button10.ImageAlign = ContentAlignment.TopCenter;
-            button10.Location = new Point(517, 391);
-            button10.Margin = new Padding(3, 4, 3, 4);
-            button10.Name = "button10";
-            button10.Size = new Size(166, 60);
-            button10.TabIndex = 59;
-            button10.Text = "ADD BOOK";
-            button10.UseVisualStyleBackColor = true;
+            add_btn.AutoSize = true;
+            add_btn.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            add_btn.FlatStyle = FlatStyle.Flat;
+            add_btn.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            add_btn.ImageAlign = ContentAlignment.TopCenter;
+            add_btn.Location = new Point(681, 485);
+            add_btn.Margin = new Padding(3, 4, 3, 4);
+            add_btn.Name = "add_btn";
+            add_btn.Size = new Size(113, 35);
+            add_btn.TabIndex = 59;
+            add_btn.Text = "ADD BOOK";
+            add_btn.UseVisualStyleBackColor = true;
+            add_btn.Click += add_btn_Click;
             // 
             // AdminManage
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.GradientActiveCaption;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(837, 768);
             Controls.Add(panel1);
@@ -167,21 +154,17 @@
             Text = "AdminManage";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)manage_dataGrid).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
         private Panel panel1;
-        private Button button10;
-        private Button button11;
+        private Button details_btn;
+        private Button archive_btn;
         private Label label2;
-        private Button button4;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn BookLog;
-        private DataGridViewTextBoxColumn BookTitle;
-        private DataGridViewTextBoxColumn Author;
-        private DataGridViewTextBoxColumn StudNo;
-        private DataGridViewTextBoxColumn Status;
+        private Button add_btn;
+        private DataGridView manage_dataGrid;
+        private Button refresh_btn;
     }
 }

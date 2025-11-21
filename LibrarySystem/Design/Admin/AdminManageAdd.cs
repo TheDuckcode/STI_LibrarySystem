@@ -15,6 +15,7 @@ namespace LibrarySystem
         public AdminManageAdd()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterParent;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace LibrarySystem
 {
-    partial class AdminManageAdd
+    partial class AdminManageDetail
     {
         /// <summary>
         /// Required designer variable.
@@ -32,19 +32,16 @@
             openFileDialog1 = new OpenFileDialog();
             pictureBox3 = new PictureBox();
             panel1 = new Panel();
-            comboBox1 = new ComboBox();
-            label6 = new Label();
+            textBox5 = new TextBox();
             textBox4 = new TextBox();
             label5 = new Label();
-            button3 = new Button();
             label4 = new Label();
+            textBox3 = new TextBox();
             textBox1 = new TextBox();
             label3 = new Label();
             label2 = new Label();
             button1 = new Button();
-            button2 = new Button();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
+            button3 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -56,11 +53,11 @@
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Microsoft Sans Serif", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Yellow;
-            label1.Location = new Point(19, 16);
+            label1.Location = new Point(29, 28);
             label1.Name = "label1";
-            label1.Size = new Size(178, 36);
+            label1.Size = new Size(244, 36);
             label1.TabIndex = 47;
-            label1.Text = "ADD BOOK";
+            label1.Text = "BOOK DETAILS";
             // 
             // openFileDialog1
             // 
@@ -70,7 +67,7 @@
             // 
             pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox3.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox3.Location = new Point(19, 67);
+            pictureBox3.Location = new Point(48, 82);
             pictureBox3.Margin = new Padding(3, 4, 3, 4);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(204, 293);
@@ -80,51 +77,41 @@
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.GradientActiveCaption;
-            panel1.Controls.Add(comboBox3);
-            panel1.Controls.Add(comboBox2);
-            panel1.Controls.Add(comboBox1);
-            panel1.Controls.Add(label6);
+            panel1.BackColor = Color.FromArgb(255, 255, 192);
+            panel1.Controls.Add(textBox5);
             panel1.Controls.Add(textBox4);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(button3);
             panel1.Controls.Add(label4);
+            panel1.Controls.Add(textBox3);
             panel1.Controls.Add(textBox1);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(button1);
-            panel1.Location = new Point(267, 13);
+            panel1.Location = new Point(296, 28);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
             panel1.Size = new Size(531, 371);
             panel1.TabIndex = 49;
             // 
-            // comboBox1
+            // textBox5
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(137, 281);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
-            comboBox1.TabIndex = 55;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.ForeColor = SystemColors.ActiveCaptionText;
-            label6.Location = new Point(15, 277);
-            label6.Name = "label6";
-            label6.Size = new Size(116, 32);
-            label6.TabIndex = 54;
-            label6.Text = "STATUS:";
+            textBox5.BackColor = Color.Gainsboro;
+            textBox5.Location = new Point(101, 253);
+            textBox5.Margin = new Padding(3, 4, 3, 4);
+            textBox5.Multiline = true;
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(228, 29);
+            textBox5.TabIndex = 29;
             // 
             // textBox4
             // 
             textBox4.BackColor = Color.Gainsboro;
-            textBox4.Location = new Point(137, 163);
+            textBox4.Location = new Point(136, 196);
             textBox4.Margin = new Padding(3, 4, 3, 4);
+            textBox4.Multiline = true;
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(228, 27);
+            textBox4.Size = new Size(228, 29);
             textBox4.TabIndex = 28;
             // 
             // label5
@@ -132,40 +119,37 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label5.ForeColor = SystemColors.ActiveCaptionText;
-            label5.Location = new Point(15, 218);
+            label5.Location = new Point(14, 251);
             label5.Name = "label5";
             label5.Size = new Size(88, 32);
             label5.TabIndex = 27;
             label5.Text = "AISLE:";
-            // 
-            // button3
-            // 
-            button3.BackColor = SystemColors.Highlight;
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.Yellow;
-            button3.Location = new Point(412, 310);
-            button3.Margin = new Padding(3, 4, 3, 4);
-            button3.Name = "button3";
-            button3.Size = new Size(102, 47);
-            button3.TabIndex = 25;
-            button3.Text = "ADD";
-            button3.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label4.ForeColor = SystemColors.ActiveCaptionText;
-            label4.Location = new Point(15, 160);
+            label4.Location = new Point(14, 193);
             label4.Name = "label4";
             label4.Size = new Size(126, 32);
             label4.TabIndex = 26;
             label4.Text = "AUTHOR:";
             // 
+            // textBox3
+            // 
+            textBox3.BackColor = Color.Gainsboro;
+            textBox3.Location = new Point(238, 136);
+            textBox3.Margin = new Padding(3, 4, 3, 4);
+            textBox3.Multiline = true;
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(228, 29);
+            textBox3.TabIndex = 11;
+            // 
             // textBox1
             // 
             textBox1.BackColor = Color.Gainsboro;
-            textBox1.Location = new Point(184, 41);
+            textBox1.Location = new Point(183, 74);
             textBox1.Margin = new Padding(3, 4, 3, 4);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
@@ -177,7 +161,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = SystemColors.ActiveCaptionText;
-            label3.Location = new Point(15, 100);
+            label3.Location = new Point(14, 133);
             label3.Name = "label3";
             label3.Size = new Size(227, 32);
             label3.TabIndex = 2;
@@ -188,7 +172,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Black", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label2.ForeColor = SystemColors.ActiveCaptionText;
-            label2.Location = new Point(15, 38);
+            label2.Location = new Point(14, 71);
             label2.Name = "label2";
             label2.Size = new Size(163, 32);
             label2.TabIndex = 1;
@@ -209,49 +193,33 @@
             button1.TextAlign = ContentAlignment.TopCenter;
             button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // button3
             // 
-            button2.BackColor = SystemColors.Highlight;
-            button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Location = new Point(52, 370);
-            button2.Margin = new Padding(3, 4, 3, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(144, 31);
-            button2.TabIndex = 53;
-            button2.Text = "Insert Image";
-            button2.UseVisualStyleBackColor = false;
+            button3.BackColor = SystemColors.Highlight;
+            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.Yellow;
+            button3.Location = new Point(414, 303);
+            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Name = "button3";
+            button3.Size = new Size(102, 47);
+            button3.TabIndex = 25;
+            button3.Text = "ADD";
+            button3.UseVisualStyleBackColor = false;
             // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(248, 104);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(222, 28);
-            comboBox2.TabIndex = 56;
-            // 
-            // comboBox3
-            // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(109, 222);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(151, 28);
-            comboBox3.TabIndex = 57;
-            // 
-            // AdminManageAdd
+            // AdminManageDetail
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.Info;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(818, 412);
-            Controls.Add(button2);
+            ClientSize = new Size(863, 438);
             Controls.Add(panel1);
             Controls.Add(pictureBox3);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
-            Name = "AdminManageAdd";
+            Name = "AdminManageDetail";
             Text = "AdminManageAdd";
+            Load += AdminManageDetail_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -265,17 +233,14 @@
         private PictureBox pictureBox3;
         private Panel panel1;
         private Label label5;
-        private Button button3;
         private Label label4;
+        private TextBox textBox3;
         private TextBox textBox1;
         private Label label3;
         private Label label2;
         private Button button1;
+        private TextBox textBox5;
         private TextBox textBox4;
-        private Button button2;
-        private ComboBox comboBox1;
-        private Label label6;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
+        private Button button3;
     }
 }

@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace LibrarySystem
+namespace LibrarySystem.Design.Admin
 {
-    public partial class AdminManageArchive : Form
+    public partial class admin_maindashboard : Form
     {
-        public AdminManageArchive()
+        public admin_maindashboard()
         {
             InitializeComponent();
-        }
-
-        private void AdminManageArchive_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

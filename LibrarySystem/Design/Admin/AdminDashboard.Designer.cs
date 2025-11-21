@@ -37,7 +37,6 @@
             location_btn = new Button();
             book_btn = new Button();
             category_btn = new Button();
-            author_btn = new Button();
             panelContent = new Panel();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -53,8 +52,7 @@
             panel2.Controls.Add(location_btn);
             panel2.Controls.Add(book_btn);
             panel2.Controls.Add(category_btn);
-            panel2.Controls.Add(author_btn);
-            panel2.Location = new Point(0, -1);
+            panel2.Location = new Point(0, 0);
             panel2.Margin = new Padding(3, 4, 3, 4);
             panel2.Name = "panel2";
             panel2.Size = new Size(190, 770);
@@ -87,7 +85,7 @@
             manage_btn.FlatStyle = FlatStyle.Flat;
             manage_btn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             manage_btn.ForeColor = SystemColors.Highlight;
-            manage_btn.Location = new Point(1, 355);
+            manage_btn.Location = new Point(1, 306);
             manage_btn.Margin = new Padding(3, 4, 3, 4);
             manage_btn.Name = "manage_btn";
             manage_btn.Size = new Size(189, 44);
@@ -117,7 +115,7 @@
             bookLog_btn.FlatStyle = FlatStyle.Flat;
             bookLog_btn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             bookLog_btn.ForeColor = SystemColors.Highlight;
-            bookLog_btn.Location = new Point(1, 305);
+            bookLog_btn.Location = new Point(1, 256);
             bookLog_btn.Margin = new Padding(3, 4, 3, 4);
             bookLog_btn.Name = "bookLog_btn";
             bookLog_btn.Size = new Size(189, 46);
@@ -135,7 +133,7 @@
             location_btn.FlatStyle = FlatStyle.Flat;
             location_btn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             location_btn.ForeColor = SystemColors.Highlight;
-            location_btn.Location = new Point(1, 256);
+            location_btn.Location = new Point(1, 206);
             location_btn.Margin = new Padding(3, 4, 3, 4);
             location_btn.Name = "location_btn";
             location_btn.Size = new Size(189, 46);
@@ -171,7 +169,7 @@
             category_btn.FlatStyle = FlatStyle.Flat;
             category_btn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             category_btn.ForeColor = SystemColors.Highlight;
-            category_btn.Location = new Point(1, 149);
+            category_btn.Location = new Point(1, 150);
             category_btn.Margin = new Padding(3, 4, 3, 4);
             category_btn.Name = "category_btn";
             category_btn.Size = new Size(189, 52);
@@ -180,28 +178,10 @@
             category_btn.UseVisualStyleBackColor = false;
             category_btn.Click += category_btn_Click;
             // 
-            // author_btn
-            // 
-            author_btn.BackColor = Color.PaleGoldenrod;
-            author_btn.FlatAppearance.BorderSize = 0;
-            author_btn.FlatAppearance.MouseDownBackColor = SystemColors.GradientActiveCaption;
-            author_btn.FlatAppearance.MouseOverBackColor = Color.LightYellow;
-            author_btn.FlatStyle = FlatStyle.Flat;
-            author_btn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            author_btn.ForeColor = SystemColors.Highlight;
-            author_btn.Location = new Point(1, 204);
-            author_btn.Margin = new Padding(3, 4, 3, 4);
-            author_btn.Name = "author_btn";
-            author_btn.Size = new Size(189, 49);
-            author_btn.TabIndex = 30;
-            author_btn.Text = "AUTHOR";
-            author_btn.UseVisualStyleBackColor = false;
-            author_btn.Click += author_btn_Click;
-            // 
             // panelContent
             // 
             panelContent.BackColor = SystemColors.GradientActiveCaption;
-            panelContent.Location = new Point(190, -1);
+            panelContent.Location = new Point(190, 0);
             panelContent.Margin = new Padding(3, 4, 3, 4);
             panelContent.Name = "panelContent";
             panelContent.Size = new Size(838, 768);
@@ -233,7 +213,6 @@
         private Button location_btn;
         private Button book_btn;
         private Button category_btn;
-        private Button author_btn;
         private Panel panelContent;
         private PictureBox pictureBox1;
         private Button logout_btn;

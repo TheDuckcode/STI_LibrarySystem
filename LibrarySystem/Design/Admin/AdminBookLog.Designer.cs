@@ -28,16 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminBookLog));
             panel1 = new Panel();
             dataGridView1 = new DataGridView();
-            BookLog = new DataGridViewTextBoxColumn();
-            BookTitle = new DataGridViewTextBoxColumn();
-            Author = new DataGridViewTextBoxColumn();
-            StudNo = new DataGridViewTextBoxColumn();
-            TransacType = new DataGridViewTextBoxColumn();
-            DateTime = new DataGridViewTextBoxColumn();
-            Status = new DataGridViewTextBoxColumn();
             label1 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -51,69 +43,19 @@
             panel1.Location = new Point(50, 83);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(702, 467);
+            panel1.Size = new Size(702, 548);
             panel1.TabIndex = 60;
             // 
             // dataGridView1
             // 
             dataGridView1.BackgroundColor = SystemColors.Highlight;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { BookLog, BookTitle, Author, StudNo, TransacType, DateTime, Status });
             dataGridView1.Location = new Point(12, 47);
             dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.Size = new Size(666, 413);
             dataGridView1.TabIndex = 59;
-            // 
-            // BookLog
-            // 
-            BookLog.HeaderText = "BOOK LOG ID";
-            BookLog.MinimumWidth = 6;
-            BookLog.Name = "BookLog";
-            BookLog.Width = 125;
-            // 
-            // BookTitle
-            // 
-            BookTitle.HeaderText = "BOOK TITLE";
-            BookTitle.MinimumWidth = 6;
-            BookTitle.Name = "BookTitle";
-            BookTitle.Width = 125;
-            // 
-            // Author
-            // 
-            Author.HeaderText = "AUTHOR";
-            Author.MinimumWidth = 6;
-            Author.Name = "Author";
-            Author.Width = 125;
-            // 
-            // StudNo
-            // 
-            StudNo.HeaderText = "STUDENT NO.";
-            StudNo.MinimumWidth = 6;
-            StudNo.Name = "StudNo";
-            StudNo.Width = 125;
-            // 
-            // TransacType
-            // 
-            TransacType.HeaderText = "TRANSACTION TYPE";
-            TransacType.MinimumWidth = 6;
-            TransacType.Name = "TransacType";
-            TransacType.Width = 125;
-            // 
-            // DateTime
-            // 
-            DateTime.HeaderText = "DATE/TIME";
-            DateTime.MinimumWidth = 6;
-            DateTime.Name = "DateTime";
-            DateTime.Width = 125;
-            // 
-            // Status
-            // 
-            Status.HeaderText = "STATUS";
-            Status.MinimumWidth = 6;
-            Status.Name = "Status";
-            Status.Width = 125;
             // 
             // label1
             // 
@@ -131,7 +73,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = SystemColors.GradientActiveCaption;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(837, 768);
             Controls.Add(panel1);
@@ -149,12 +91,5 @@
         private Panel panel1;
         private Label label1;
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn BookLog;
-        private DataGridViewTextBoxColumn BookTitle;
-        private DataGridViewTextBoxColumn Author;
-        private DataGridViewTextBoxColumn StudNo;
-        private DataGridViewTextBoxColumn TransacType;
-        private DataGridViewTextBoxColumn DateTime;
-        private DataGridViewTextBoxColumn Status;
     }
 }

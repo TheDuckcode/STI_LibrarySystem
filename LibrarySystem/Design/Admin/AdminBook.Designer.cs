@@ -73,7 +73,7 @@
             panel1.Location = new Point(36, 87);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
-            panel1.Size = new Size(704, 467);
+            panel1.Size = new Size(725, 467);
             panel1.TabIndex = 35;
             // 
             // pictureBox12
@@ -214,7 +214,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = SystemColors.GradientActiveCaption;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(837, 768);
             Controls.Add(panel1);

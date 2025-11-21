@@ -22,11 +22,16 @@ namespace LibrarySystem
 
         }
 
-        
+
 
         private void button3_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Borrow Set!");
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
