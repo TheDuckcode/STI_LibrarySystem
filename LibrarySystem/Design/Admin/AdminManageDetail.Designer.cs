@@ -30,19 +30,19 @@
         {
             label1 = new Label();
             openFileDialog1 = new OpenFileDialog();
-            pictureBox3 = new PictureBox();
+            details_picBox = new PictureBox();
             panel1 = new Panel();
             textBox5 = new TextBox();
             textBox4 = new TextBox();
             label5 = new Label();
+            edit_btn = new Button();
             label4 = new Label();
             textBox3 = new TextBox();
             textBox1 = new TextBox();
             label3 = new Label();
             label2 = new Label();
-            button1 = new Button();
-            button3 = new Button();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            x_btn = new Button();
+            ((System.ComponentModel.ISupportInitialize)details_picBox).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -63,17 +63,17 @@
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
-            // pictureBox3
+            // details_picBox
             // 
-            pictureBox3.BackgroundImageLayout = ImageLayout.Stretch;
-            pictureBox3.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox3.Location = new Point(48, 82);
-            pictureBox3.Margin = new Padding(3, 4, 3, 4);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(204, 293);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 48;
-            pictureBox3.TabStop = false;
+            details_picBox.BackgroundImageLayout = ImageLayout.Stretch;
+            details_picBox.BorderStyle = BorderStyle.Fixed3D;
+            details_picBox.Location = new Point(48, 82);
+            details_picBox.Margin = new Padding(3, 4, 3, 4);
+            details_picBox.Name = "details_picBox";
+            details_picBox.Size = new Size(204, 293);
+            details_picBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            details_picBox.TabIndex = 48;
+            details_picBox.TabStop = false;
             // 
             // panel1
             // 
@@ -81,13 +81,13 @@
             panel1.Controls.Add(textBox5);
             panel1.Controls.Add(textBox4);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(button3);
+            panel1.Controls.Add(edit_btn);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(textBox3);
             panel1.Controls.Add(textBox1);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(x_btn);
             panel1.Location = new Point(296, 28);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
@@ -124,6 +124,19 @@
             label5.Size = new Size(88, 32);
             label5.TabIndex = 27;
             label5.Text = "AISLE:";
+            // 
+            // edit_btn
+            // 
+            edit_btn.BackColor = SystemColors.Highlight;
+            edit_btn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            edit_btn.ForeColor = Color.Yellow;
+            edit_btn.Location = new Point(414, 303);
+            edit_btn.Margin = new Padding(3, 4, 3, 4);
+            edit_btn.Name = "edit_btn";
+            edit_btn.Size = new Size(102, 47);
+            edit_btn.TabIndex = 25;
+            edit_btn.Text = "EDIT";
+            edit_btn.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -178,33 +191,21 @@
             label2.TabIndex = 1;
             label2.Text = "BOOK TITLE:";
             // 
-            // button1
+            // x_btn
             // 
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Black;
-            button1.ImageAlign = ContentAlignment.TopCenter;
-            button1.Location = new Point(491, 4);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(37, 39);
-            button1.TabIndex = 0;
-            button1.Text = "X";
-            button1.TextAlign = ContentAlignment.TopCenter;
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            button3.BackColor = SystemColors.Highlight;
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.Yellow;
-            button3.Location = new Point(414, 303);
-            button3.Margin = new Padding(3, 4, 3, 4);
-            button3.Name = "button3";
-            button3.Size = new Size(102, 47);
-            button3.TabIndex = 25;
-            button3.Text = "ADD";
-            button3.UseVisualStyleBackColor = false;
+            x_btn.FlatStyle = FlatStyle.Flat;
+            x_btn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            x_btn.ForeColor = Color.Black;
+            x_btn.ImageAlign = ContentAlignment.TopCenter;
+            x_btn.Location = new Point(491, 4);
+            x_btn.Margin = new Padding(3, 4, 3, 4);
+            x_btn.Name = "x_btn";
+            x_btn.Size = new Size(37, 39);
+            x_btn.TabIndex = 0;
+            x_btn.Text = "X";
+            x_btn.TextAlign = ContentAlignment.TopCenter;
+            x_btn.UseVisualStyleBackColor = true;
+            x_btn.Click += x_btn_Click;
             // 
             // AdminManageDetail
             // 
@@ -213,14 +214,14 @@
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(863, 438);
             Controls.Add(panel1);
-            Controls.Add(pictureBox3);
+            Controls.Add(details_picBox);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "AdminManageDetail";
             Text = "AdminManageAdd";
             Load += AdminManageDetail_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)details_picBox).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ResumeLayout(false);
@@ -230,7 +231,7 @@
         #endregion
         private Label label1;
         private OpenFileDialog openFileDialog1;
-        private PictureBox pictureBox3;
+        private PictureBox details_picBox;
         private Panel panel1;
         private Label label5;
         private Label label4;
@@ -238,9 +239,9 @@
         private TextBox textBox1;
         private Label label3;
         private Label label2;
-        private Button button1;
+        private Button x_btn;
         private TextBox textBox5;
         private TextBox textBox4;
-        private Button button3;
+        private Button edit_btn;
     }
 }

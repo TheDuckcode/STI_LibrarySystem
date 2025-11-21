@@ -32,6 +32,8 @@
             openFileDialog1 = new OpenFileDialog();
             pictureBox3 = new PictureBox();
             panel1 = new Panel();
+            comboBox3 = new ComboBox();
+            comboBox2 = new ComboBox();
             comboBox1 = new ComboBox();
             label6 = new Label();
             textBox4 = new TextBox();
@@ -41,10 +43,8 @@
             textBox1 = new TextBox();
             label3 = new Label();
             label2 = new Label();
-            button1 = new Button();
+            x_btn = new Button();
             button2 = new Button();
-            comboBox2 = new ComboBox();
-            comboBox3 = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             panel1.SuspendLayout();
             SuspendLayout();
@@ -92,12 +92,28 @@
             panel1.Controls.Add(textBox1);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(x_btn);
             panel1.Location = new Point(267, 13);
             panel1.Margin = new Padding(3, 4, 3, 4);
             panel1.Name = "panel1";
             panel1.Size = new Size(531, 371);
             panel1.TabIndex = 49;
+            // 
+            // comboBox3
+            // 
+            comboBox3.FormattingEnabled = true;
+            comboBox3.Location = new Point(109, 222);
+            comboBox3.Name = "comboBox3";
+            comboBox3.Size = new Size(151, 28);
+            comboBox3.TabIndex = 57;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled = true;
+            comboBox2.Location = new Point(248, 104);
+            comboBox2.Name = "comboBox2";
+            comboBox2.Size = new Size(222, 28);
+            comboBox2.TabIndex = 56;
             // 
             // comboBox1
             // 
@@ -194,20 +210,21 @@
             label2.TabIndex = 1;
             label2.Text = "BOOK TITLE:";
             // 
-            // button1
+            // x_btn
             // 
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Black;
-            button1.ImageAlign = ContentAlignment.TopCenter;
-            button1.Location = new Point(491, 4);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(37, 39);
-            button1.TabIndex = 0;
-            button1.Text = "X";
-            button1.TextAlign = ContentAlignment.TopCenter;
-            button1.UseVisualStyleBackColor = true;
+            x_btn.FlatStyle = FlatStyle.Flat;
+            x_btn.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            x_btn.ForeColor = Color.Black;
+            x_btn.ImageAlign = ContentAlignment.TopCenter;
+            x_btn.Location = new Point(491, 4);
+            x_btn.Margin = new Padding(3, 4, 3, 4);
+            x_btn.Name = "x_btn";
+            x_btn.Size = new Size(37, 39);
+            x_btn.TabIndex = 0;
+            x_btn.Text = "X";
+            x_btn.TextAlign = ContentAlignment.TopCenter;
+            x_btn.UseVisualStyleBackColor = true;
+            x_btn.Click += x_btn_Click;
             // 
             // button2
             // 
@@ -220,22 +237,6 @@
             button2.TabIndex = 53;
             button2.Text = "Insert Image";
             button2.UseVisualStyleBackColor = false;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(248, 104);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(222, 28);
-            comboBox2.TabIndex = 56;
-            // 
-            // comboBox3
-            // 
-            comboBox3.FormattingEnabled = true;
-            comboBox3.Location = new Point(109, 222);
-            comboBox3.Name = "comboBox3";
-            comboBox3.Size = new Size(151, 28);
-            comboBox3.TabIndex = 57;
             // 
             // AdminManageAdd
             // 
@@ -270,7 +271,7 @@
         private TextBox textBox1;
         private Label label3;
         private Label label2;
-        private Button button1;
+        private Button x_btn;
         private TextBox textBox4;
         private Button button2;
         private ComboBox comboBox1;
